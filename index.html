@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ventasya.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/index.css" type="text/css" >
+        <link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="jquery/jquery-ui-1.11.1.custom/jquery-ui.css">
+
+    </head>
+    <body>
+        <!-- Header. Dentro de esta etiqueta va el encabezado de la página-->
+        <header>
+            <div class="banner"><img src="img/logotipos/logo-ventasya.png" alt="Logotipo ventas ya" 
+                                     width="200"/>
+                <p>La mejor tecnología a tu alcance</p>
+            </div>
+            
+        </header>
+        <!-- Nav. Dentro de esta etiqueta va el menú de la página-->
+        <nav>
+            <form style="margin-top: 1em;">
+                <div id="radioset">
+                    <input type="radio" id="radio1" name="radio" checked="checked"><label class="menuopt" for="radio1">PRINCIPAL</label>
+                    <input type="radio" id="radio2" name="radio"><label class="menuopt" for="radio2">TIENDA</label>
+                    <input type="radio" id="radio3" name="radio"><label class="menuopt" for="radio3">FOROS</label>
+                    <input type="radio" id="radio4" name="radio"><label class="menuopt" for="radio4">CONTÁCTENOS</label>
+                    <input type="radio" id="radio5" name="radio"><label class="menuopt" for="radio5">ACERCA DE</label>
+                </div>
+            </form>
+
+        </nav>
+        <!-- article. Dentro de esta etiqueta va el contenido de la página, 
+        pueden haber varios de estos-->
+        <article>
+            <div>
+                <img id="imgHome" src="img/imagenes/home.jpg" />
+            </div>
+        </article>
+        <!-- Footer. Dentro de esta etiqueta va el pié de la página-->
+        <footer>
+            <p>UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA - UNAD</p>
+            <p>Escuela de Ciencias Básicas Tecnología e Ingeniería</p>
+            <p>Curso de Diseño de Sitios Web</p>
+        </footer>
+        <script src="jquery/jquery-ui-1.11.1.custom/external/jquery/jquery.js"></script>
+        <script src="jquery/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+        <script>
+            $( "#radioset" ).buttonset();
+        </script>
+    </body>
+</html>
